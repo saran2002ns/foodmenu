@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MyCookLab 🍳</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="script.js" defer></script>
+</head>
+<body class="total-body">
+  <header>
+    <h1>MyCookLab 🍽️</h1>
+    <section class="search-section">
+        <div class="search-wrapper">
+          <input type="text" id="search" onkeydown="searchMeal()" placeholder="Find your favorite meal..." />
+          <button onclick="searchMeal()">Go</button>
+        </div>
+      </section>
+  </header>
+  <main>
+    <section id="results-section">
+      <div id="results" class="results-grid"></div>
+    </section>
+  </main>
+
+  <button id="toTopBtn" onclick="scrollToTop()">↑</button>
+
+  <footer>
+    <p class="bottom">© 2025 MyCookLab | Crafted by Me 😎</p>
+  </footer>
+</body>
+</html>

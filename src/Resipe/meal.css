@@ -1,0 +1,231 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-height: 1150px;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #fff8f0;
+    padding: 10px;
+    color: #333;
+  }
+  
+  /* Header Styles */
+  header {
+    background: #000;
+    color: #fff;
+    padding: 0.5rem;
+    text-align: center;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  /* Search Bar Section */
+  .search-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .search-wrapper {
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .search-wrapper input {
+    flex: 1;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  
+  .search-wrapper button {
+    padding: 0.8rem 1.5rem;
+    background: #c69393;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .search-wrapper button:hover {
+    background: #f5b9b9;
+  }
+  
+  /* Main Layout */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  /* Card Styles */
+  .card {
+    flex: 1 1 350px;
+    max-width: 400px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    font-size: 0.9rem;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .content {
+    padding: 12px;
+  }
+  
+  /* Meal Result Grid */
+  .results-grid {
+    flex: 2 1 600px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  .card {
+    flex: 1 1 350px;
+    min-width: 300px;
+  }
+  
+  .results-grid {
+    flex: 2 1 600px;
+    min-width: 400px;
+  }
+
+  
+  
+  /* Meal Card */
+  .meal-class {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .meal-class img.res-img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+  
+  .meal-class h3 {
+    font-size: 1rem;
+    color: #d35400;
+    margin: 10px 0 5px;
+  }
+  
+  .meal-class p {
+    font-size: 0.8rem;
+    color: #555;
+  }
+  
+  /* Other Components */
+  h1 {
+    font-size: 1.5rem;
+    margin: 0 0 10px;
+    color: #d35400;
+  }
+  
+  .meta {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .ingredients ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  .ingredients li {
+    padding: 4px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .instructions {
+    margin-top: 10px;
+    line-height: 1.4;
+  }
+  
+  .btn-youtube {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 14px;
+    background-color: #ff0000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-youtube:hover {
+    background-color: #c40000;
+  }
+  .btn-home {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 14px;
+    background-color: #564848;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-home:hover {
+    background-color: #000000;
+  }
+
+  
+  /* Responsive */
+  @media (max-width: 900px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+  .meal-class{
+    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease; 
+  }
+  .meal-class:hover{
+    transform: scale(1.03);
+    background: #ffffff;
+  }
+  /* #res {
+    background: #e67300;
+     background: #dba9a9;
+    border-radius: 14px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease; 
+   } 
+  
+ 
+  
+   .res-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 12px;
+     } 
+     */
